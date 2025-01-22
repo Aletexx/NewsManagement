@@ -1,0 +1,222 @@
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #432600;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #a9a3a3;
+    display: block;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.title{
+    font-family: sans-serif;
+    text-align: center;
+    color: #054300;
+
+    font-size: 40px;
+
+}
+
+#titleArticle{
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(5, 67, 0);
+}
+
+#h2 {
+    text-align: center;
+}
+
+#h2_news_title a {
+    text-align: center;
+    color: #447a0e;
+    font-family: Sans-Serif;
+    font-size: medium;
+    text-decoration: none;
+}
+
+#ind_news_title {
+    text-align: center;
+    color: #447a0e;
+    font-family: Sans-Serif;
+    font-size: larger;
+}
+
+#h3_show_cat a {
+    text-align: center;
+    color: #447a0e;
+    font-family: Sans-Serif;
+    font-size: medium;
+    text-decoration: none;
+}
+#pageName {
+    text-decoration: underline;
+}
+
+body {
+    width: 75%;
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+    background-color: #f9f9f9;
+}
+
+p {
+    text-align: left;
+}
+
+#myInput {
+
+    background-position: 10px 12px;
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#mySearchButton {
+
+    background-position: 10px 12px;
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news_list {
+    list-style-type: none;
+}
+
+.maxText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;  /* Number of lines displayed before it truncate */
+    overflow: hidden;
+}
+
+
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Style for textarea with dynamic height */
+textarea {
+    width: 100%; /* Full width */
+    min-height: 150px; /* Default height */
+    max-height: 400px; /* Maximum height */
+    resize: vertical; /* Allow user to resize only vertically */
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button style */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#link_style_button {
+    background: none !important;
+    border: none !important;
+    color: blue !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+
+#link_style_button:hover {
+    color: #1558b0; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
+}

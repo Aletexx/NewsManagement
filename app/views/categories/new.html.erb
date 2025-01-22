@@ -1,0 +1,21 @@
+<div class="sidenav">
+  <%= link_to "Admin Home", admin_news_index_path %>
+  <%= link_to "Create news", new_admin_news_path %>
+  <%= link_to 'Create New Category', new_category_path %>
+  <%= link_to 'Edit and Delete Category', categories_path %>
+</div>
+
+<h1 class="title">Create a New Category</h1>
+<ul id="myUL">
+<%= form_with model: @category, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit "Create Category" %>
+  </p>
+<% end %>
+</ul>
+<%= link_to 'Back to Admin', admin_news_index_path %>
